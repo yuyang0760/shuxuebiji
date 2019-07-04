@@ -7,7 +7,7 @@
 \usepackage{amssymb}
 \usepackage{float} % 图像浮动
 \usepackage[xetex]{graphicx} % xetex驱动
-\usepackage[left=1.00cm, right=0.00cm, top=0.20cm, bottom=0.00cm]{geometry}
+\usepackage[left=1.00cm, right=0.00cm, top=0.20cm, bottom=0.20cm]{geometry}
 \usepackage{color} % 颜色
 \title{数学笔记}	% 标题
 \author{于洋}			% 作者
@@ -24,7 +24,90 @@
 %=========== [ 三角函数 ] =======================================
 \section{三角函数}
 
+%=========== 基础知识 ===========================================
+
+\subsection*{基础知识}
+诱导公式:
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\begin{minipage}{170pt}
+		$$
+	\begin{array}{l}{\sin (2 k \pi+\alpha)=\sin \alpha, k \in \mathbb{Z}} \\ {\cos (2 k \pi+\alpha)=\cos \alpha, k \in \mathbb{Z}} \\ {\tan (2 k \pi+\alpha)=\tan \alpha, k \in \mathbb{Z}}\end{array}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$$
+	\begin{array}{c}{\sin (\pi+\alpha)=-\sin \alpha} \\ {\cos (\pi+\alpha)=-\cos \alpha} \\ {\tan (\pi+\alpha)=\tan \alpha}\end{array}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$$
+	\begin{array}{c}{\sin (-\alpha)=-\sin \alpha} \\ {\cos (-\alpha)=\cos \alpha} \\ {\tan (-\alpha)=-\tan \alpha}\end{array}
+	$$
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\begin{minipage}{170pt}
+		$$
+	\begin{aligned} \sin (\pi-\alpha) &=\sin \alpha \\ \cos (\pi-\alpha) &=-\cos \alpha \\ \tan (\pi-\alpha) &=-\tan \alpha \end{aligned}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$$
+	\begin{aligned} \sin \left(\frac{\pi}{2}+\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}+\alpha\right) &=-\sin \alpha \\ \tan \left(\frac{\pi}{2}+\alpha\right) &=-\cot \alpha \end{aligned}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$$
+	\begin{aligned} \sin \left(\frac{\pi}{2}-\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}-\alpha\right) &=\sin \alpha \\ \tan \left(\frac{\pi}{2}-\alpha\right) &=\cot \alpha \end{aligned}
+	$$
+	\end{minipage}
+\end{figure}
+\\
+两角和差:
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\begin{minipage}{170pt}
+		$$
+	\begin{aligned} \sin (\alpha+\beta) &=\sin \alpha \cos \beta+\cos \alpha \sin \beta \\ \sin (\alpha-\beta) &=\sin \alpha \cos \beta-\cos \alpha \sin \beta \\ \cos (\alpha+\beta) &=\cos \alpha \cos \beta-\sin \alpha \sin \beta \\ \cos (\alpha-\beta) &=\cos \alpha \cos \beta+\sin \alpha \sin \beta \end{aligned}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$$
+	\begin{aligned} \tan (\alpha+\beta) &=\frac{\tan \alpha+\tan \beta}{1-\tan \alpha \tan \beta} \\ \tan (\alpha-\beta) &=\frac{\tan \alpha-\tan \beta}{1+\tan \alpha \tan \beta} \end{aligned}
+	$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+	\end{minipage}
+\end{figure}
+\\
+二倍角和降幂: 
+\begin{figure}[!h] %figure参数：加个! H 禁止浮动 h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\begin{minipage}{270pt}
+		$\sin 2 \alpha=2 \sin \alpha \cos \alpha$ \\
+		$\cos 2 \alpha=\cos ^{2} \alpha-\sin ^{2} \alpha=2 \cos ^{2} \alpha-1=1-2 \sin ^{2} \alpha$ \\
+		$\tan 2 \alpha=\frac{2 \tan \alpha}{1-\tan ^{2} \alpha}$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{170pt}
+		$\cos ^{2} \alpha=\frac{1+\cos 2 \alpha}{2}, \sin ^{2} \alpha=\frac{1-\cos 2 \alpha}{2}$
+	\end{minipage}
+\end{figure} 
+\\
+辅助角公式: \quad
+$a \sin \alpha+b \cos \alpha=\sqrt{a^{2}+b^{2}} \sin (\alpha+\varphi), \tan \varphi=\frac{b}{a}$ \\
+弧长和扇形面积公式: \quad
+$l=r|\alpha|, \quad S=\frac{1}{2} \operatorname{lr}=\frac{1}{2}|\alpha| r^{2}$ \\
 %=========== 终边一点 ===========================================
+\newpage
 \subsection{终边一点}
 {\color{red} 角$\alpha$ 终边上一点(-4,3):} \\
 $\cos \alpha=\frac{x}{r}=\frac{x}{\sqrt{x^{2}+y^{2}}}=\frac{-4}{\sqrt{(-4)^{2}+3^{2}}}=-\frac{4}{5}$ \\
@@ -50,7 +133,7 @@ $\sin \left(2 x+\frac{\pi}{3}\right) = cos\left(2 x+\frac{\pi}{3}-\frac{\pi}{2}\
 \subsection{区间内最值,值域}
 
 %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
-\begin{minipage}[h]{0.5\linewidth}
+\begin{minipage}[!h]{0.5\linewidth}
 	{\color{red}   $f(x)=4 \sin \left(2 x-\frac{\pi}{3}\right)+\sqrt{3}$在$\left[0, \frac{\pi}{2}\right]$上的最大值,最小值 } \\
 	$x \in\left[0, \frac{\pi}{2}\right]$ \\
 	2$x \in[0, \pi]$ \\
@@ -61,7 +144,7 @@ $\sin \left(2 x+\frac{\pi}{3}\right) = cos\left(2 x+\frac{\pi}{3}-\frac{\pi}{2}\
 	$4 \sin \left(2 x-\frac{\pi}{3}\right)+\sqrt{3} \in[-\sqrt{3}, 4+\sqrt{3}]$
 \end{minipage}
 \hfill
-\begin{minipage}[h]{0.5\linewidth}
+\begin{minipage}[!h]{0.5\linewidth}
 	\includegraphics[scale=0.8]{pic/sanjiaohanshu/qujianneizuizhi.png}
 \end{minipage}
 
@@ -71,7 +154,7 @@ $\sin \left(2 x+\frac{\pi}{3}\right) = cos\left(2 x+\frac{\pi}{3}-\frac{\pi}{2}\
 $y = \cos x$ \\
 横坐标缩短到原来的$ \frac{1}{2} $ (x换成2x) $\longrightarrow$ $y= \cos 2x$ \\
 纵坐标伸长到原来的2倍 (A换成2A) $\longrightarrow$ $y=  2 \cos 2x$ \\
-向左平移 $\frac {\pi}{4} $  (x换成 x+4) $\longrightarrow$ $y=2 \cos \left[2\left(x+\frac{\pi}{4}\right)\right]$
+向左平移 $\frac {\pi}{4} $  ($x$换成 $x+\frac{\pi}{4}$) $\longrightarrow$ $y=2 \cos \left[2\left(x+\frac{\pi}{4}\right)\right]$
 %=========== 对称中心,对称轴,单调区间 =============================
 
 \subsection {对称中心,对称轴,单调区间}
@@ -125,13 +208,15 @@ $y=|\sin x|$ , $y=\sin |x|$ , $y=-\sin x$ 图像 \\
 \newpage
 %==============  [ 正余弦 ]=======================================
 \section{正余弦}
+%==============  基础知识 ========================================
+\subsection*{基础知识}
 %==============  正弦定理(多解取舍) ===============================
 \subsection{正弦定理(多解取舍)}
 {\color{red} 在 $\Delta A B C$中,$b=\sqrt{3}, B=60^{\circ}, c=1$,求C } \\
 $ \frac{b}{\sin B}=\frac{c}{\sin C} \therefore \sin C=\frac{1}{2}, c=30^{\circ}$或$150^{\circ}$ \\
 角度取舍两种思路:\\
 1) 依据大边对大角:  \quad
-$\because b>c,  \therefore B<C \therefore C=30^{\circ}$ \\
+$\because b>c,  \therefore B>C \therefore C=30^{\circ}$ \\
 2) 三角形内角和 $180^{\circ}$ : \quad
 $ \because   B=60^{\circ}, \therefore 0^{\circ}<C<120^{\circ}  \therefore C=30^{\circ}$ \\
 
@@ -260,9 +345,9 @@ $\therefore \left(a_{n}\right)_{\max }=a_{45},\left(a_{n}\right)_{\min }=a_{44}$
 %============= [ 一般数列 ] ======================================
 
 \subsection{一般数列 单调性}
-{\color{red}  题目: } \\
-\includegraphics[width=500pt]  {pic/shulie/fenduanhanshutimu.jpg} \\
-解答: \\
-\includegraphics[width=500pt]  {pic/shulie/fenduanhanshudaan.jpg} \\
+% {\color{red}  题目: } \\
+% \includegraphics[width=500pt]  {pic/shulie/fenduanhanshutimu.jpg} \\
+% 解答: \\
+% \includegraphics[width=500pt]  {pic/shulie/fenduanhanshudaan.jpg} \\
 
 \end{document}
