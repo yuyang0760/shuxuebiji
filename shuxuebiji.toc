@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}三角函数}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}基础知识}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}终边一点}{5}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}平移}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}sin和cos 互化}{5}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}区间内最值,值域}{5}{subsection.1.5}% 
+\contentsline {subsection}{\numberline {1.6}伸缩变换}{5}{subsection.1.6}% 
+\contentsline {subsection}{\numberline {1.7}对称中心,对称轴,单调区间}{5}{subsection.1.7}% 
+\contentsline {subsection}{\numberline {1.8}sinx图像翻转}{6}{subsection.1.8}% 
+\contentsline {subsection}{\numberline {1.9}零点个数}{6}{subsection.1.9}% 
+\contentsline {section}{\numberline {2}正余弦}{7}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}基础知识}{7}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}多解取舍两种思路}{7}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}角化边,边化角,角化角}{7}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}三角形形状(讨论n种情况)}{7}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}已知三边判断三角形形状}{8}{subsection.2.5}% 
+\contentsline {section}{\numberline {3}向量}{9}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}基础知识}{9}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}绝对值}{9}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}夹角,锐角,钝角}{9}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}基础图形(理)}{10}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}基底建模法(理)}{10}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}数列}{11}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}分式数列 单调性}{11}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}分段数列 单调性}{11}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}一般数列 单调性}{11}{subsection.4.3}% 

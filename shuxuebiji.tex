@@ -7,16 +7,18 @@
 \usepackage{amssymb}
 \usepackage{float} % 图像浮动
 \usepackage[xetex]{graphicx} % xetex驱动
-\usepackage[left=1.00cm, right=0.00cm, top=0.20cm, bottom=0.20cm]{geometry}
+\usepackage[left=1.00cm, right=0.50cm, top=0.20cm, bottom=0.20cm]{geometry}
 \usepackage{color} % 颜色
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \title{数学笔记}	% 标题
 \author{于洋}			% 作者
 \date{}					% 日期
 \linespread{1.5}	%行间距
+% \renewcommand\arraystretch{1.3} %表格行高
 \usepackage[breaklinks,colorlinks,linkcolor=black,citecolor=black,urlcolor=black]{hyperref} % 生成书签
 \setlength{\parindent}{0pt}  % 设置缩进
-
 \begin{document}
+\tableofcontents
 \maketitle
 
 \newpage
@@ -26,46 +28,46 @@
 
 %=========== 基础知识 ===========================================
 
-\subsection*{基础知识}
+\subsection{基础知识}
 诱导公式:
 \begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
 	\centering
 	\begin{minipage}{170pt}
 		$$
-	\begin{array}{l}{\sin (2 k \pi+\alpha)=\sin \alpha, k \in \mathbb{Z}} \\ {\cos (2 k \pi+\alpha)=\cos \alpha, k \in \mathbb{Z}} \\ {\tan (2 k \pi+\alpha)=\tan \alpha, k \in \mathbb{Z}}\end{array}
-	$$
+			\begin{array}{l}{\sin (2 k \pi+\alpha)=\sin \alpha, k \in \mathbb{Z}} \\ {\cos (2 k \pi+\alpha)=\cos \alpha, k \in \mathbb{Z}} \\ {\tan (2 k \pi+\alpha)=\tan \alpha, k \in \mathbb{Z}}\end{array}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 		$$
-	\begin{array}{c}{\sin (\pi+\alpha)=-\sin \alpha} \\ {\cos (\pi+\alpha)=-\cos \alpha} \\ {\tan (\pi+\alpha)=\tan \alpha}\end{array}
-	$$
+			\begin{array}{c}{\sin (\pi+\alpha)=-\sin \alpha} \\ {\cos (\pi+\alpha)=-\cos \alpha} \\ {\tan (\pi+\alpha)=\tan \alpha}\end{array}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 		$$
-	\begin{array}{c}{\sin (-\alpha)=-\sin \alpha} \\ {\cos (-\alpha)=\cos \alpha} \\ {\tan (-\alpha)=-\tan \alpha}\end{array}
-	$$
+			\begin{array}{c}{\sin (-\alpha)=-\sin \alpha} \\ {\cos (-\alpha)=\cos \alpha} \\ {\tan (-\alpha)=-\tan \alpha}\end{array}
+		$$
 	\end{minipage}
 \end{figure}
 \begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
 	\centering
 	\begin{minipage}{170pt}
 		$$
-	\begin{aligned} \sin (\pi-\alpha) &=\sin \alpha \\ \cos (\pi-\alpha) &=-\cos \alpha \\ \tan (\pi-\alpha) &=-\tan \alpha \end{aligned}
-	$$
+			\begin{aligned} \sin (\pi-\alpha) &=\sin \alpha \\ \cos (\pi-\alpha) &=-\cos \alpha \\ \tan (\pi-\alpha) &=-\tan \alpha \end{aligned}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 		$$
-	\begin{aligned} \sin \left(\frac{\pi}{2}+\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}+\alpha\right) &=-\sin \alpha \\ \tan \left(\frac{\pi}{2}+\alpha\right) &=-\cot \alpha \end{aligned}
-	$$
+			\begin{aligned} \sin \left(\frac{\pi}{2}+\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}+\alpha\right) &=-\sin \alpha \\ \tan \left(\frac{\pi}{2}+\alpha\right) &=-\cot \alpha \end{aligned}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 		$$
-	\begin{aligned} \sin \left(\frac{\pi}{2}-\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}-\alpha\right) &=\sin \alpha \\ \tan \left(\frac{\pi}{2}-\alpha\right) &=\cot \alpha \end{aligned}
-	$$
+			\begin{aligned} \sin \left(\frac{\pi}{2}-\alpha\right) &=\cos \alpha \\ \cos \left(\frac{\pi}{2}-\alpha\right) &=\sin \alpha \\ \tan \left(\frac{\pi}{2}-\alpha\right) &=\cot \alpha \end{aligned}
+		$$
 	\end{minipage}
 \end{figure}
 \\
@@ -74,21 +76,21 @@
 	\centering
 	\begin{minipage}{170pt}
 		$$
-	\begin{aligned} \sin (\alpha+\beta) &=\sin \alpha \cos \beta+\cos \alpha \sin \beta \\ \sin (\alpha-\beta) &=\sin \alpha \cos \beta-\cos \alpha \sin \beta \\ \cos (\alpha+\beta) &=\cos \alpha \cos \beta-\sin \alpha \sin \beta \\ \cos (\alpha-\beta) &=\cos \alpha \cos \beta+\sin \alpha \sin \beta \end{aligned}
-	$$
+			\begin{aligned} \sin (\alpha+\beta) &=\sin \alpha \cos \beta+\cos \alpha \sin \beta \\ \sin (\alpha-\beta) &=\sin \alpha \cos \beta-\cos \alpha \sin \beta \\ \cos (\alpha+\beta) &=\cos \alpha \cos \beta-\sin \alpha \sin \beta \\ \cos (\alpha-\beta) &=\cos \alpha \cos \beta+\sin \alpha \sin \beta \end{aligned}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 		$$
-	\begin{aligned} \tan (\alpha+\beta) &=\frac{\tan \alpha+\tan \beta}{1-\tan \alpha \tan \beta} \\ \tan (\alpha-\beta) &=\frac{\tan \alpha-\tan \beta}{1+\tan \alpha \tan \beta} \end{aligned}
-	$$
+			\begin{aligned} \tan (\alpha+\beta) &=\frac{\tan \alpha+\tan \beta}{1-\tan \alpha \tan \beta} \\ \tan (\alpha-\beta) &=\frac{\tan \alpha-\tan \beta}{1+\tan \alpha \tan \beta} \end{aligned}
+		$$
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
 	\end{minipage}
 \end{figure}
 \\
-二倍角和降幂: 
+二倍角和降幂:
 \begin{figure}[!h] %figure参数：加个! H 禁止浮动 h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
 	\centering
 	\begin{minipage}{270pt}
@@ -98,14 +100,34 @@
 	\end{minipage}
 	\hspace{10pt}
 	\begin{minipage}{170pt}
-		$\cos ^{2} \alpha=\frac{1+\cos 2 \alpha}{2}, \sin ^{2} \alpha=\frac{1-\cos 2 \alpha}{2}$
+		$\cos ^{2} \alpha=\frac{1+\cos 2 \alpha}{2}, \\ \sin ^{2} \alpha=\frac{1-\cos 2 \alpha}{2}$
 	\end{minipage}
-\end{figure} 
+\end{figure}
 \\
 辅助角公式: \quad
 $a \sin \alpha+b \cos \alpha=\sqrt{a^{2}+b^{2}} \sin (\alpha+\varphi), \tan \varphi=\frac{b}{a}$ \\
 弧长和扇形面积公式: \quad
 $l=r|\alpha|, \quad S=\frac{1}{2} \operatorname{lr}=\frac{1}{2}|\alpha| r^{2}$ \\
+和差化积,积化和差:
+\begin{figure}[!h] %figure参数：加个! H 禁止浮动 h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\begin{minipage}{200pt}
+		$$
+			\begin{array}{l}{\sin \alpha+\sin \beta=2 \sin \left(\frac{\alpha+\beta}{2}\right) \cos \left(\frac{\alpha-\beta}{2}\right)} \\ {\sin \alpha-\sin \beta=2 \sin \left(\frac{\alpha-\beta}{2}\right) \cos \left(\frac{\alpha+\beta}{2}\right)} \\ {\cos \alpha+\cos \beta=2 \cos \left(\frac{\alpha+\beta}{2}\right) \cos \left(\frac{\alpha-\beta}{2}\right)} \\ {\cos \alpha-\cos \beta=-2 \sin \left(\frac{\alpha+\beta}{2}\right) \sin \left(\frac{\alpha-\beta}{2}\right)}\end{array}
+		$$
+	\end{minipage}
+	\hspace{10pt}
+	\begin{minipage}{200pt}
+		$$
+			\begin{aligned} \cos \alpha \sin \beta &=\frac{1}{2}[\sin (\alpha+\beta)-\sin (\alpha-\beta)] \\ \sin \alpha \cos \beta &=\frac{1}{2}[\sin (\alpha+\beta)+\sin (\alpha-\beta)] \\ \cos \alpha \cos \beta &=\frac{1}{2}[\cos (\alpha+\beta)+\cos (\alpha-\beta)] \\ \sin \alpha \sin \beta &=-\frac{1}{2}[\cos (\alpha+\beta)-\cos (\alpha-\beta)] \end{aligned}
+		$$
+	\end{minipage}
+\end{figure} \\
+三角函数性质: \\
+\begin{center}
+	\includegraphics[scale=0.7]  {pic/sanjiaohanshu/sanjiaohanshuxingzhi.jpg}
+
+\end{center}
 %=========== 终边一点 ===========================================
 \newpage
 \subsection{终边一点}
@@ -176,11 +198,11 @@ $y = \cos x$ \\
 	$\sin \left(2 x-\frac{\pi}{3}\right)$ 减区间 & $2 x-\frac{\pi}{3} \in\left[\frac{\pi}{2}+2 k \pi, \frac{3}{2} \pi+2 k \pi\right](k \in z)$ \\
 	\hline
 \end{tabular} \\
-计算出$x$范围 . {\color{red}  对称中心,对称轴,同样原理,都是根据基础图形,替换即可}
+计算出$x$范围即可 . {\color{red}  对称中心,对称轴,同样原理,都是根据基础图形,替换即可}
 
 %==============     sinx图像翻转 =================================
 \subsection {sinx图像翻转}
-$y=|\sin x|$ , $y=\sin |x|$ , $y=-\sin x$ 图像 \\
+$y=|\sin x|$ , $y=\sin |x|$ , $y=-\sin x$  \qquad (绿虚线:$\sin x$图像,红线:翻转后图像) \\
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[scale=0.6]  {pic/sanjiaohanshu/abs(sin(x)).png}
@@ -209,11 +231,23 @@ $y=|\sin x|$ , $y=\sin |x|$ , $y=-\sin x$ 图像 \\
 %==============  [ 正余弦 ]=======================================
 \section{正余弦}
 %==============  基础知识 ========================================
-\subsection*{基础知识}
-%==============  正弦定理(多解取舍) ===============================
-\subsection{正弦定理(多解取舍)}
+\subsection{基础知识}
+{\color{blue} 正弦定理: } \\ $\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2 R$ \\
+{\color{blue}余弦定理: }\\ $a^{2}=b^{2}+c^{2}-2 b c \cos A \qquad b^{2}=a^{2}+c^{2}-2 a c \cos B \quad c^{2}=a^{2}+b^{2}-2 a b \cos C$ \\
+\qquad \qquad $\cos A=\frac{b^{2}+c^{2}-a^{2}}{2 b c} \qquad \cos B=\frac{a^{2}+c^{2}-b^{2}}{2 a c} \qquad \cos C=\frac{a^{2}+b^{2}-c^{2}}{2 a b}$ \\
+{\color{blue}面积公式:} \\
+$S_{\Delta A B C}=\frac{1}{2} a b \sin C=\frac{1}{2} a c \sin B=\frac{1}{2} b c \sin A$ \\
+$S=\frac{(a+b+c) r}{2}$ \qquad
+$S=\frac{abc}{4R}$ \qquad $S=\sqrt{p(p-a)(p-b)(p-c)}$ \qquad ($p=\frac{1}{2}(a+b+c)$) \\
+{\color{blue}判断三角形形状:}
+最短两条边的平方与第三条边平方比较 \\
+$a^{2}>b^{2}+c^{2} \quad \Delta A B C$ 为钝角三角形 \\
+$a^{2}=b^{2}+c^{2} \quad \Delta A B C$ 为直角三角形 \\
+$a^{2}<b^{2}+c^{2} \quad \Delta A B C$ 为锐角三角形 \\
+%==============  多解取舍两种思路 ===============================
+\subsection{多解取舍两种思路}
 {\color{red} 在 $\Delta A B C$中,$b=\sqrt{3}, B=60^{\circ}, c=1$,求C } \\
-$ \frac{b}{\sin B}=\frac{c}{\sin C} \therefore \sin C=\frac{1}{2}, c=30^{\circ}$或$150^{\circ}$ \\
+$ \frac{b}{\sin B}=\frac{c}{\sin C} \therefore \sin C=\frac{1}{2} \therefore c=30^{\circ}$或$150^{\circ}$ \\
 角度取舍两种思路:\\
 1) 依据大边对大角:  \quad
 $\because b>c,  \therefore B>C \therefore C=30^{\circ}$ \\
@@ -272,27 +306,57 @@ $\because 0<A<\pi \therefore 0<2A<2\pi$ \\
 {\color{red} 已知三角形三边为 3,5,7 求三角形是形状(锐角,直角,钝角) } \\
 $\because 3^{2}+5^{2}<7^{2}$ $\therefore$ 钝角
 
-%============= [ 向量 ] ==========================================
-\section{向量}
 
+%============= [ 向量 ] ===========================================
+\newpage
+\section{向量}
+%============= [ 基础知识 ] ========================================
+\subsection{基础知识}
+
+
+{\renewcommand\baselinestretch{2.5}\selectfont % 调整行间距
+	\begin{tabular}{|c|c|c|}
+		\hline
+		                               & 线性运算                                                                                                                                          & 坐标运算                                                                                            \\
+		\hline
+		加法                           & \tabincell{c} {三角形法则:首尾相连首尾连: $\overrightarrow{A B}+\overrightarrow{B C}=\overrightarrow{A C}$                                                                                                                                              \\
+		平行四边形法则:同起点,对角线 } & $\vec{a}+\vec{b}=\left(x_{1}+x_{2}, y_{1}+y_{2}\right)$                                                                                                                                                                                                 \\
+		\hline
+		减法                           & 三角形法则:同起点，连终点，指向被减向量:$\overrightarrow{A B}+\overrightarrow{A C}=\overrightarrow{C B}$                                          & $\vec{a}-\vec{b}=\left(x_{1}-x_{2}, y_{1}-y_{2}\right)$                                             \\
+		\hline
+		数乘                           & $x \vec{a}$ 表示与 $ \vec{a} $的方向相同($x>0$)或者相反($x<0$),长度为$\vec{a}$的$x$倍                                                             & $\lambda \vec{a}=\left(\lambda x_{1}, \lambda y_{1}\right)$                                         \\
+		\hline
+		数量积                         & $\vec{a} \cdot \vec{b}=|\vec{a}| \cdot|\vec{b}| \cos \theta$                                                                                      & $\vec{a} \cdot \vec{b}=x_{1} x_{2}+y_{1} y_{2}$                                                     \\
+		\hline
+		模                             & $|\vec{a} |=\sqrt{\vec{a}  \cdot \vec{a} }$ \qquad ($\vec{a}^{2}=|\vec{a}|^{2}$)                                                                  & $|\vec{a}|=\sqrt{x_{1}^{2}+y_{1}^{2}}$                                                              \\
+		\hline
+		夹角                           & $\cos \theta=\frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}$                                                                                    & $\cos \theta=\frac{x_{1} x_{2}+y_{1} y_{2}}{\sqrt{x_{1}^{2}+y_{1}^{2}} \sqrt{x_{2}^{2}+y_{2}^{2}}}$ \\
+		\hline
+		平行                           & $\vec{a}=\lambda \vec{b}(\vec{b} \neq 0)$                                                                                                         & $x_{1} y_{2}=x_{2} y_{1}$                                                                           \\
+		\hline
+		垂直                           & $\vec{a} \cdot \vec{b}=0$                                                                                                                         & $x_{1} x_{2}+y_{1} y_{2}=0$                                                                         \\
+		\hline
+		大写坐标                       & \multicolumn{2}{c}{ 设 $A\left(x_{1}, y_{1}\right), B\left(x_{2}, y_{2}\right)$ 则 $\overrightarrow{A B}=\left(x_{2}-x_{1}, y_{2}-y_{1}\right)$ }                                                                                                       \\
+		\hline
+	\end{tabular} \\
+	\par}
 %============= [ 绝对值 ] ==========================================
 
 \subsection{绝对值}
-{\color{blue} 绝对值、想平方,算完之后不要慌. }\\
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/xiangliang/jueduizhi.jpg} \\
-解答: A\\
+解: {\color{blue} 绝对值、想平方,算完之后不要慌. }\\
 $\because |\vec{a}+\vec{b}|^{2}=|\vec{a}|^{2}+|\vec{b}|^{2}+2 \vec{a} \cdot \vec{b}=8$ \\
 $ \therefore 2 \vec{a} \cdot \vec{b}=3$ \\
 $\therefore |\vec{a}-\vec{b}|^{2}=|\vec{a}|^{2}+|\vec{b}|^{2}-2 \vec{a} \cdot \vec{b}=2$ \\
-
+$\therefore $ 选 A
 %============= [ 夹角锐角钝角 ] =======================================
 
-\subsection{夹角锐角钝角}
+\subsection{夹角,锐角,钝角}
 % {\color{blue} 绝对值、想平方,算完之后不要慌. }\\
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/xiangliang/jiajiaotimu.jpg} \\
-解答: {\color{blue}  $\vec{a} \cdot \vec{b}>0$ 且 不共线} \\
+解: {\color{blue}  $\vec{a} \cdot \vec{b}>0$ 且 不共线} \\
 \includegraphics[width=500pt]  {pic/xiangliang/jiajiaojieda.jpg} \\
 
 %============= [ 基础图形(理) ] ==========================================
@@ -306,7 +370,7 @@ $\therefore |\vec{a}-\vec{b}|^{2}=|\vec{a}|^{2}+|\vec{b}|^{2}-2 \vec{a} \cdot \v
 \subsection{基底建模法(理)}
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/xiangliang/jidijianmofa.jpg} \\
-解答:{\color{blue} 以$\overrightarrow{B M}$,$\overrightarrow{C N}$为基底,进行计算.} \\
+解:{\color{blue} 以$\overrightarrow{B M}$,$\overrightarrow{C N}$为基底,进行计算.} \\
 设:$e_{1}=\overrightarrow{B M}, \quad e_{2}=\overrightarrow{C N}$,则 \\ \\
 $\overrightarrow{A M}=\overrightarrow{A C}+\overrightarrow{C M}=-3 e_{2}-e_{1}$ \\
 $\overrightarrow{B N}=\overrightarrow{B C}+\overrightarrow{C N}=2 e_{1}+e_{2}$ \\
@@ -339,7 +403,7 @@ $\therefore \left(a_{n}\right)_{\max }=a_{45},\left(a_{n}\right)_{\min }=a_{44}$
 \subsection{分段数列 单调性}
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/shulie/fenduanhanshutimu.jpg} \\
-解答: \\
+解: \\
 \includegraphics[width=500pt]  {pic/shulie/fenduanhanshudaan.jpg} \\
 
 %============= [ 一般数列 ] ======================================
