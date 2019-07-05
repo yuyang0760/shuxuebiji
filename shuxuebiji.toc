@@ -28,8 +28,12 @@
 \contentsline {subsubsection}{\numberline {4.2.3}一般数列}{14}{subsubsection.4.2.3}% 
 \contentsline {subsection}{\numberline {4.3}最值问题}{15}{subsection.4.3}% 
 \contentsline {subsection}{\numberline {4.4}求通项公式}{15}{subsection.4.4}% 
-\contentsline {subsubsection}{\numberline {4.4.1}求通项公式1}{15}{subsubsection.4.4.1}% 
-\contentsline {subsubsection}{\numberline {4.4.2}求通项公式2}{15}{subsubsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.1}已知$S_{n}$和$n$}{15}{subsubsection.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.2}已知$S_{n}$和$a_{n}$}{15}{subsubsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.3}叠加法}{15}{subsubsection.4.4.3}% 
+\contentsline {subsubsection}{\numberline {4.4.4}叠乘法}{15}{subsubsection.4.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.5}倒数法}{15}{subsubsection.4.4.5}% 
+\contentsline {subsubsection}{\numberline {4.4.6}待定系数法}{15}{subsubsection.4.4.6}% 
 \contentsline {subsection}{\numberline {4.5}求和}{15}{subsection.4.5}% 
 \contentsline {subsubsection}{\numberline {4.5.1}裂项相消法}{15}{subsubsection.4.5.1}% 
-\contentsline {subsubsection}{\numberline {4.5.2}错位相减法}{15}{subsubsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.2}错位相减法}{16}{subsubsection.4.5.2}% 
