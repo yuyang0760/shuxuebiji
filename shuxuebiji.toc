@@ -20,7 +20,16 @@
 \contentsline {subsection}{\numberline {3.3}夹角,锐角,钝角}{9}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}基础图形(理)}{10}{subsection.3.4}% 
 \contentsline {subsection}{\numberline {3.5}基底建模法(理)}{10}{subsection.3.5}% 
-\contentsline {section}{\numberline {4}数列}{11}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}分式数列 单调性}{11}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}分段数列 单调性}{11}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}一般数列 单调性}{11}{subsection.4.3}% 
+\contentsline {section}{\numberline {4}数列}{12}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}基础知识}{12}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}单调性}{14}{subsection.4.2}% 
+\contentsline {subsubsection}{\numberline {4.2.1}分式数列}{14}{subsubsection.4.2.1}% 
+\contentsline {subsubsection}{\numberline {4.2.2}分段数列}{14}{subsubsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.3}一般数列}{14}{subsubsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.3}最值问题}{15}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}求通项公式}{15}{subsection.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.1}求通项公式1}{15}{subsubsection.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.2}求通项公式2}{15}{subsubsection.4.4.2}% 
+\contentsline {subsection}{\numberline {4.5}求和}{15}{subsection.4.5}% 
+\contentsline {subsubsection}{\numberline {4.5.1}裂项相消法}{15}{subsubsection.4.5.1}% 
+\contentsline {subsubsection}{\numberline {4.5.2}错位相减法}{15}{subsubsection.4.5.2}% 
