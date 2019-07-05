@@ -217,7 +217,7 @@ $y=|\sin x|$ , $y=\sin |x|$ , $y=-\sin x$  \qquad (绿虚线:$\sin x$图像,红�
 
 %==============     零点个数 =====================================
 \subsection {零点个数}
-{\color{red}  $f(x)=\left(\frac{1}{2}\right)^{x}-\sin x$ 零点个数} \\
+{\color{red}  $f(x)=\left(\frac{1}{2}\right)^{x}-\sin x$ 在$[0,2\pi]$ 的零点个数} \\
 令 $f(x)=0$ 即$\left(\frac{1}{2}\right)^{x}=\sin x$ \\
 画出等号左右两侧图像,交点个数就是零点个数 (2个)
 \begin{figure}[h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
@@ -248,7 +248,7 @@ $a^{2}<b^{2}+c^{2} \quad \Delta A B C$ 为锐角三角形 \\
 \subsection{多解取舍两种思路}
 {\color{red} 在 $\Delta A B C$中,$b=\sqrt{3}, B=60^{\circ}, c=1$,求C } \\
 $ \frac{b}{\sin B}=\frac{c}{\sin C} \therefore \sin C=\frac{1}{2} \therefore c=30^{\circ}$或$150^{\circ}$ \\
-角度取舍两种思路:\\
+{\color{blue} 角度取舍两种思路: }\\
 1) 依据大边对大角:  \quad
 $\because b>c,  \therefore B>C \therefore C=30^{\circ}$ \\
 2) 三角形内角和 $180^{\circ}$ : \quad
@@ -256,7 +256,7 @@ $ \because   B=60^{\circ}, \therefore 0^{\circ}<C<120^{\circ}  \therefore C=30^{
 
 %============= 角化边,边化角,角化角 ===============================
 
-\subsection{角化边,边化角,角化角}
+\subsection{角化边,边化角}
 {\color{red} $3a\cos A=c\cos B+b\cos C$,求$\cos A $} \\
 两种思路都可以: \\
 边 $\rightarrow$ 角 \\
@@ -265,7 +265,17 @@ $\therefore   \cos A=\frac{1}{3}$ \\
 角 $\rightarrow$ 边	 \\
 $3 a \cos A=c \cdot \frac{a^{2}+c^{2}-b^{2}}{2 a c}+b \cdot \frac{a^{2}+b^{2}-c^{2}}{2 a b}$
 $\therefore  \cos A=\frac{1}{3}$ \\
+\subsection{角化角}
+ {\color{red} $\sin B \cdot \sin C=\cos ^{2} \frac{A}{2}$ ,三角形形状 }
 
+解:{\color{blue} 当出现三个角时,考虑角化角.化简成两个角的关系.} \\
+先降幂: $\sin B \cdot \sin C=\cos ^{2} \frac{A}{2}=\frac{\cos A+1}{2}$ \\
+{\color{blue} A角化成B+C }: $\therefore 2 \sin B \cdot \sin C = \cos A+1 =\cos(B+C)+1$ \\
+化简计算即可: \\
+$\therefore 2 \sin B \cdot \sin C=-\cos B \cos C+\sin B \sin C+1$ \\
+$\therefore \cos B \cos C+\sin B \sin C=\cos (B-C)=1$ \\
+$\therefore B-C=0, B=C$ \\
+$\therefore$ 等腰
 %============= 判断三角形形状 =====================================
 
 \subsection{三角形形状(讨论n种情况)}
@@ -328,7 +338,7 @@ $\because 3^{2}+5^{2}<7^{2}$ $\therefore$ 钝角
 		\hline
 		数量积                         & $\vec{a} \cdot \vec{b}=|\vec{a}| \cdot|\vec{b}| \cos \theta$                                                                                      & $\vec{a} \cdot \vec{b}=x_{1} x_{2}+y_{1} y_{2}$                                                     \\
 		\hline
-		模                             & $|\vec{a} |=\sqrt{\vec{a}  \cdot \vec{a} }$ \qquad ($\vec{a}^{2}=|\vec{a}|^{2}$)                                                                  & $|\vec{a}|=\sqrt{x_{1}^{2}+y_{1}^{2}}$                                                              \\
+		模                             & $|\vec{a} |=\sqrt{\vec{a}  \cdot \vec{a} }$ \qquad ($|\vec{a}|^{2}=\vec{a}^{2}$)                                                                  & $|\vec{a}|=\sqrt{x_{1}^{2}+y_{1}^{2}}$                                                              \\
 		\hline
 		夹角                           & $\cos \theta=\frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}$                                                                                    & $\cos \theta=\frac{x_{1} x_{2}+y_{1} y_{2}}{\sqrt{x_{1}^{2}+y_{1}^{2}} \sqrt{x_{2}^{2}+y_{2}^{2}}}$ \\
 		\hline
@@ -345,14 +355,14 @@ $\because 3^{2}+5^{2}<7^{2}$ $\therefore$ 钝角
 \subsection{绝对值}
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/xiangliang/jueduizhi.jpg} \\
-解: {\color{blue} 绝对值、想平方,算完之后不要慌. }\\
+解: {\color{blue} 绝对值、想平方,算完之后不要慌. 因为算完后的 $\vec{a} \cdot \vec{b}$ 常常作为一个整体看待!}\\
 $\because |\vec{a}+\vec{b}|^{2}=|\vec{a}|^{2}+|\vec{b}|^{2}+2 \vec{a} \cdot \vec{b}=8$ \\
 $ \therefore 2 \vec{a} \cdot \vec{b}=3$ \\
 $\therefore |\vec{a}-\vec{b}|^{2}=|\vec{a}|^{2}+|\vec{b}|^{2}-2 \vec{a} \cdot \vec{b}=2$ \\
 $\therefore $ 选 A
 %============= [ 夹角锐角钝角 ] =======================================
 
-\subsection{夹角,锐角,钝角}
+\subsection{夹角为锐角,钝角}
 % {\color{blue} 绝对值、想平方,算完之后不要慌. }\\
 {\color{red}  题目: } \\
 \includegraphics[width=500pt]  {pic/xiangliang/jiajiaotimu.jpg} \\
@@ -434,19 +444,42 @@ $\therefore \left(a_{n}\right)_{\max }=a_{45},\left(a_{n}\right)_{\min }=a_{44}$
 
 %============= [ 最值 ] =========================================
 
-\subsection{最值问题}
-\subsection{求通项公式}
-\subsubsection{已知$S_{n}$和$n$}
-\subsubsection{已知$S_{n}$和$a_{n}$}
-\subsubsection{叠加法}
-\subsubsection{叠乘法}
-\subsubsection{倒数法}
-\subsubsection{待定系数法}
-\subsection{求和}
+\subsection{等差最值问题}
+待补充
+1.什么情况才会有最值? \\
+2.最值的常见问法? \\
+3.最值解题思路? \\
+%============= [ 求通项公式 ] ====================================
+\subsection{求通项公式 \texorpdfstring{$a_{n}$}{Lg}}
+
+%============= [ Sn和n ] =========================================
+\subsubsection{已知 \texorpdfstring{$S_{n}$}{Lg} 和\texorpdfstring{$n$}{Lg} 的关系,求\texorpdfstring{$a_{n}$}{Lg}   }
+{\color{blue} 根据公式:$a_{n}=\left\{\begin{array}{ll}{S_{1}} & {(n=1)} \\ {S_{n}-S_{n-1}} & {(n \geqslant 2)}\end{array}\right.$ } \\
+{\color{red}  $S_{n}=2 n^{2}+3 n+1$ ,求$a_{n}$} \\
+解: \\
+当n=1时,$a_{1}=S_{1}=6$ \\
+当$n \geqslant 2$时,$a_{n}=S_{n}-S_{n-1}=4 n-1$ \\
+({ \color{blue} 假设上式n=1,看是否也等于6,如果等于可以合在一块写.不等于要分段写.此题不等于. })\\
+假设上式 n=1,则 $a_{1}=5\neq S_{1}$ \\
+$ \therefore a_{n}=\left\{\begin{array}{ll}{6} & {n=1} \\ {4 n+1} & {n \geqslant 2}\end{array}\right.$
+%============= [ Sn和an ] =========================================
+\subsubsection{已知 \texorpdfstring{$S_{n}$}{Lg} 和\texorpdfstring{$a_{n}$}{Lg} 的关系,求\texorpdfstring{$a_{n}$}{Lg}   }
+
+% \subsubsection{叠加法}
+% 适用于:
+% \subsubsection{叠乘法}
+% 适用于:
+% \subsubsection{倒数法}
+% 适用于:
+% \subsubsection{待定系数法}
+% 适用于:
+\subsection{求前n项和\texorpdfstring{$S_{n}$}{Lg}}
 \subsubsection{裂项相消法}
-如何裂项: $a_{n}=\frac{k}{b_{n} \cdot c_{n}}=\frac{k}{b_{n}-c_{n}}\left(\frac{1}{b_{n}}-\frac{1}{c_{n}}\right)$ \\
+
+如何裂项: $a_{n}=\frac{k}{b_{n} \cdot c_{n}}=\frac{k}{c_{n}-b_{n}}\left(\frac{1}{b_{n}}-\frac{1}{c_{n}}\right)$ \\
 相消规律: 对称性 \\
-最后尽量化简成1个分式 \\
+最后结果尽量化简成1个分式 \\
+
 例题: \\
 {\color{red}求 $a_{n}=\frac{1}{(2 n-1)(2 n+1)}$前n项和 }\\
 $a_{n}=\frac{1}{(2 n-1)(2 n+1)}=\frac{1}{2}\left(\frac{1}{2 n-1}-\frac{1}{2 n+1}\right)$ \\
@@ -462,6 +495,6 @@ $S_{n} =1 \cdot 2+2 \cdot 2^{2}+3 \cdot 2^{3}+\cdots+(n-1) \cdot 2^{n-1}+n \cdot
 $2 S_{n}=\qquad \quad 1 \cdot 2^{2}+2 \cdot 2^{3}+3 \cdot 2^{4}+\cdots+(n-1) \cdot 2^{n}+n \cdot 2^{n+1}$ \\
 两式相减 \\
 $-S_{n}=2+2^{2}+2^{3}+\dots+2^{n}-n \cdot 2^{n+1}$ \\
-等比前n项和公式化简
+利用等比前n项和公式化简 \\
 $S_{n}=(n-1) \cdot 2^{n+1}+2$
 \end{document}
