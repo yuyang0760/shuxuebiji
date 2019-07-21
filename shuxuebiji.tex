@@ -253,7 +253,8 @@ $ \frac{b}{\sin B}=\frac{c}{\sin C} \therefore \sin C=\frac{1}{2} \therefore c=3
 $\because b>c,  \therefore B>C \therefore C=30^{\circ}$ \\
 2) 三角形内角和 $180^{\circ}$ : \quad
 $ \because   B=60^{\circ}, \therefore 0^{\circ}<C<120^{\circ}  \therefore C=30^{\circ}$ \\
-
+%==============  利用三角形多解取舍 ===============================
+\subsection{利用三角形多解取舍}
 %============= 角化边,边化角,角化角 ===============================
 
 \subsection{角化边,边化角}
@@ -473,7 +474,13 @@ $ \therefore a_{n}=\left\{\begin{array}{ll}{6} & {n=1} \\ {4 n+1} & {n \geqslant
 % 适用于:
 % \subsubsection{待定系数法}
 % 适用于:
+
+%============= [ 求前n项和 ] =========================================
+
 \subsection{求前n项和\texorpdfstring{$S_{n}$}{Lg}}
+
+%============= [ 裂项相消法 ] =========================================
+
 \subsubsection{裂项相消法}
 
 如何裂项: $a_{n}=\frac{k}{b_{n} \cdot c_{n}}=\frac{k}{c_{n}-b_{n}}\left(\frac{1}{b_{n}}-\frac{1}{c_{n}}\right)$ \\
@@ -485,6 +492,9 @@ $ \therefore a_{n}=\left\{\begin{array}{ll}{6} & {n=1} \\ {4 n+1} & {n \geqslant
 $a_{n}=\frac{1}{(2 n-1)(2 n+1)}=\frac{1}{2}\left(\frac{1}{2 n-1}-\frac{1}{2 n+1}\right)$ \\
 $S_{n}=\frac{1}{2}\left(1-\frac{1}{3}+\frac{1}{3}-\frac{1}{5}+\frac{1}{5}-\frac{1}{7}+\cdots+\frac{1}{2 n-1}-\frac{1}{2 n+1}\right)$ \\
 $=\frac{1}{2}\left(1-\frac{1}{2 n+1}\right)=\frac{n}{2 n+1}$ \\
+
+%============= [ 错位相减法 ] =========================================
+
 \subsubsection{错位相减法}
 适用于: 等差乘以等比 \\
 步骤: 1.乘公比 2.错位 3.相减 \\
@@ -496,5 +506,140 @@ $2 S_{n}=\qquad \quad 1 \cdot 2^{2}+2 \cdot 2^{3}+3 \cdot 2^{4}+\cdots+(n-1) \cd
 两式相减 \\
 $-S_{n}=2+2^{2}+2^{3}+\dots+2^{n}-n \cdot 2^{n+1}$ \\
 利用等比前n项和公式化简 \\
-$S_{n}=(n-1) \cdot 2^{n+1}+2$
+$S_{n}=(n-1) \cdot 2^{n+1}+2$ \\
+
+\newpage 
+%============= [ 立体几何 ] =========================================
+\section{立体几何}
+
+%============= [ 基础知识 ] =========================================
+\subsection{经验和基础知识}
+% %============= [ 三种角范围 ] =========================================
+
+\subsubsection{三种角范围}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/szjfw.png} \\
+	  
+\end{figure}
+% %============= [ 面积体积 ] =========================================
+\subsubsection{面积体积}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mjtj.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mjtj1.png} \\
+	  
+\end{figure}
+
+% 平行暂时注释掉
+\iffalse
+% %============= [ 平行 ] =========================================
+
+\subsubsection{平行}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/xmpxpd.png} \\
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/xmpxxz.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mmpxpd.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mmpxxz.png} \\
+	  
+\end{figure}
+% %============= [ 垂直 ] =========================================
+
+\subsubsection{垂直}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/xmczpd.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/xmczxz.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mmczpd.png} \\
+	  
+\end{figure}
+\begin{figure}[!h] %figure参数：h 此处（here）t 页顶（top）b 页底（bottom）p 独立一页（page）
+	\centering
+	\includegraphics[width=450pt]  {pic/litijihe/mmczxz.png} \\
+	  
+\end{figure}
+
+\fi 
+% %============= [ 平行证明 ] =========================================
+
+\subsubsection{平行}
+\begin{center}
+	
+	\includegraphics[width=420pt]  {pic/litijihe/pxzm.png} \\
+\end{center}
+
+	  
+% %============= [ 垂直证明 ] =========================================
+
+\subsubsection{垂直}
+\begin{center}
+	\includegraphics[width=420pt]  {pic/litijihe/czzm.png} \\
+\end{center}
+
+
+
+% \subsubsection{面积体积}
+% %============= [ 平行基础知识 ] =========================================
+% \subsubsection{平行}
+% %============= [ 垂直基础知识 ] =========================================
+% \subsubsection{垂直}
+%============= [ 外接圆,内切圆 ] =========================================
+\subsection{外接圆,内切圆}
+1
+%============= [ 三视图还原方法 ] =========================================
+\subsection{三视图还原方法}
+%============= [ 平行三种模型 ] =========================================
+\subsection{平行三种模型}
+%============= [ 垂直两种模型 ] =========================================
+\subsection{垂直两种模型}
+
+\newpage
+%============= [ 空间向量(理) ] =========================================
+
+\section{不等式}
+\subsection{利用不等式性质求取值范围}
+\subsection{一元二次含参不等式}
+\subsection{一元二次含参不等式逆向}
+\subsection{恒成立三种解法}
+\subsection{基本不等式}
+\subsection{绝对值不等式}
+\subsection{柯西不等式}
+\subsection{线性规划}
+\subsection{一元二次方程根的分布}
+
+%============= [ 空间向量(理) ] =========================================
+
+\section{空间向量(理)}
+\newpage
+\section{更新日志}
+2019-7-21	添加了 立体几何 中"基础知识"小节.
+
+%============= [   ] =========================================
+
 \end{document}
+
+
